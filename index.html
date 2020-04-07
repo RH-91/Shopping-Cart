@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <center >
+    <div id="mainContainer">
+        <center>
+            <div>
+                <h2>Shopping Cart</h2>
+                    <tr>
+                        <input type="text" placeholder="Name of item" class="rounded" id="name">
+                        <input type="number" placeholder="₹" class="rounded" id="price">
+                    </tr>
+                <br><br>
+                <button onclick="addToCart()" class="rounded" id="add">Add</button>
+                <button class="rounded" id="showBtn">Show Cart:<input type="checkbox" id="checkBox" onclick="showCart();"></button>
+                <button onclick="clearCart()" class="rounded" id="clearBtn">Clear Cart</button>
+    
+            </div>
+        </center>
+        <br>
+        <div id="listContainer">
+        <table cellspacing="5" cellpadding="5" id="list">
+            <tr >
+                <th>Sr. No.</th>
+                <th>Item Name</th>
+                <th>Price</th>
+            </tr>
+            
+        </table>
+        </div>
+    </div>
+    </center>
+   <script src="main.js"></script> 
+</body>
+</html>
